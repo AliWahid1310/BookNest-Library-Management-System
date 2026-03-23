@@ -38,10 +38,16 @@ const AuthModal = ({ isOpen, onClose, onLogin }) => {
         })
       });
 
-      const data = await response.json();
+      let data = {};
+      try {
+        data = await response.json();
+      } catch (jsonError) {
+        console.error('JSON parse error:', jsonError, 'Response status:', response.status);
+        throw new Error('Invalid response from server - please check if backend is running');
+      }
 
       if (!response.ok) {
-        throw new Error(data.error || 'Authentication failed');
+        throw new Error(data.message || data.error || 'Authentication failed');
       }
 
       // Store token and user data
