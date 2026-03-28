@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BookNest favicon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="book" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e9e9ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#bg)"/>
+
+  <path d="M20 16h16c4.4 0 8 3.6 8 8v22H28c-3.3 0-6 2.7-6 6V16z" fill="url(#book)"/>
+  <path d="M44 16h-8c-4.4 0-8 3.6-8 8v22h16V16z" fill="#f5f5ff" opacity="0.95"/>
+
+  <path d="M28 24h10M28 30h10M28 36h8" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+  <path d="M22 46c1.6-2 3.8-3 6.5-3H44" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.95"/>
+</svg>
